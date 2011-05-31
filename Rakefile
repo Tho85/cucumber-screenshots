@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/Tho85/cucumber-screenshots"
   gem.license = "MIT"
   gem.summary = %Q{Cucumber formatters with screenshots}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{Formatters to include Cucumber screenshots in test outputs}
   gem.email = "thomas.hollstegge@zweitag.de"
   gem.authors = ["Thomas Hollstegge"]
   # dependencies defined in Gemfile
