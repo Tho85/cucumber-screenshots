@@ -81,7 +81,9 @@ module Cucumber
       end
 
       def emails_for_step(step)
-        ActionMailer::Base.deliveries.collect{|mail| mail_as_json(mail) }
+        if (defined? ActionMailer)
+          ActionMailer::Base.deliveries.collect{|mail| mail_as_json(mail) }
+        end
       end
 
       def mail_as_json(mail)
